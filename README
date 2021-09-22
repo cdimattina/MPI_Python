@@ -9,9 +9,15 @@ To run any MPI program "this_program.py" from the command line, type
 where <# processors> is the number of processors (1,2,3...) and <arg1> ... <argn> are the
 input arguments to this_program.py
 
-MPI Programs in ./FIBO
+MPI Programs in ./FIBO 
 
-get_size.py   : Gets the size of the global communicator
-comm.py       : Gets the rank of each node
+get_size.py             : Gets the size of the global communicator
+comm.py                 : Gets the rank of each node
+bcast1.py               : Broadcasts data from the manager node to the worker nodes
+scat1.py                : Managr scatters fibonacci tasks to worker nodes + then collects results
+ptp.py                  : Manager node 0 moves information to worker node 1
+fibomodmpi.py           : Takes as inputs 4 numbers, each of 4 worker nodes computes 1 fibonacci number
 
-Other Programs in ./FIBO
+MPI Programs in ./SUM
+
+parallel_add_numbers.py : Adds up numbers 1 to 100 using parallelization
