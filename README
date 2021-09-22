@@ -1,2 +1,17 @@
 README for MPI_Python repository
 
+Description: A set of simple programs that illustate the power of parallel computing with MPI.
+Running the code in this repository requires MPI for python installed in your Python environment.
+To run any MPI program "this_program.py" from the command line, type
+
+[user@computer]$ mpirun -n <# processors> python this_program.py <arg1> .... <argn>
+
+where <# processors> is the number of processors (1,2,3...) and <arg1> ... <argn> are the
+input arguments to this_program.py
+
+MPI Programs in ./FIBO
+
+get_size.py   : Gets the size of the global communicator
+comm.py       : Gets the rank of each node
+
+Other Programs in ./FIBO
